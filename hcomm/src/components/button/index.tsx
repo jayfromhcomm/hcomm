@@ -15,11 +15,12 @@ const BaseButton = styled.button`
         pr-5
         pt-3
         pb-3
+        w-32
         outline-none
         rounded-md
         text-white
         text-xs
-        font-semibold
+        font-bold
         border-transparent
         border-2
         border-solid
@@ -28,24 +29,25 @@ const BaseButton = styled.button`
         duration-200
         ease-in-out
         m-1
+        justify-center
     `}
 `
 
 const OutlineButton = styled.button`
     ${tw`
         text-white
-        bg-red-500
+        bg-purple-500
         hover:bg-transparent
-        hover: text-red-500
-        hover:border-red-500
+        hover: text-purple-500
+        hover:border-purple-500
     `}
 `
 const FilledButton = styled(BaseButton)`
     ${tw`
-       border-red-500
-       text-red-500
+       border-purple-500
+       text-purple-500
        bg-transparent
-       hover:bg-red-500
+       hover:bg-purple-500
        hover:text-white
        hover:border-transparent
     `}
