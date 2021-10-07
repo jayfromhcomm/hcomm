@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@brainhubeu/react-carousel": "^2.0.4",
     "@craco/craco": "^6.3.0",
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
@@ -50,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "@types/brainhubeu__react-carousel": "^2.0.4",
     "@types/react-burger-menu": "^2.8.1",
     "@types/styled-components": "^5.1.14",
     "autoprefixer": "^9.8.8",

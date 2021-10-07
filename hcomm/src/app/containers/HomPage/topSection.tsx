@@ -1,9 +1,12 @@
 import React from "react";
-import styled from 'styled-components'
-import tw from 'twin.macro'
+import styled from 'styled-components';
+import tw from 'twin.macro';
 
-import SolutionImg from '../../../assets/Our_solution.svg'
+
+import SolutionImg from '../../../assets/Our_solution.svg';
 import { Button } from "../../../components/button";
+
+
 
 //entire section container
 const TopSectionContainer = styled.div`
@@ -18,8 +21,12 @@ const TopSectionContainer = styled.div`
         lg:pr-12
         pl-3
         pr-3
+        pb-10
+        mb-10
+        
     `}
 `
+
 
 // left and right containers
 const LeftContainer = styled.div`
@@ -85,7 +92,7 @@ const Description = styled.p`
         lg:text-sm
         xl:text-lg
         sm:max-h-full
-        overflow-hidden
+        /* overflow-auto */
         max-h-12
         text-gray-800
     `}
@@ -117,9 +124,13 @@ const ButtonContainer = styled.div`
 
 export function TopSection() {
     return(
+     
         <TopSectionContainer>
+        
             <LeftContainer>
-                <Slogan>Human. <SpanSlogan>Communication.</SpanSlogan> Simplified.</Slogan>
+                <Slogan>Human. </Slogan>
+                <SpanSlogan>Communication.</SpanSlogan> 
+                <Slogan className='underline'>Simplified.</Slogan>
                 <Description>
                     The future of Contact Centers is upon us, and HComm gives companies
                     the tools they need to either build or upgrade existing
@@ -136,5 +147,6 @@ export function TopSection() {
                 </SVG>
             </RightContainer>
         </TopSectionContainer>
+        
     )
 }

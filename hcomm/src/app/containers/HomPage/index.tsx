@@ -3,7 +3,11 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 import { Marginer } from "../../../components/marginer";
 import { Navbar } from "../../../components/navbar";
+import { FeatureSection } from "./featured";
 import { TopSection } from "./topSection";
+import '@brainhubeu/react-carousel'
+import { WhyHcomm } from "./whyHcomm";
+
 
 const PageContainer = styled.div`
     ${tw`
@@ -21,7 +25,9 @@ export function HomePage() {
         <PageContainer>
             <Navbar />
             <TopSection />
-            <Marginer margin='bottom' />
+            <Marginer direction='vertical' margin='4em' />
+            {/* <FeatureSection /> */}
+            <WhyHcomm />
         </PageContainer>
     )
 }
