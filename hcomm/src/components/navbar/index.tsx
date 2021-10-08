@@ -5,7 +5,9 @@ import { Logo } from "../logo";
 import { NavItems } from "./navItems";
 
 const NavbarContainer = styled.div`
-min-height: 68px;
+    min-height: 68px;
+    position: fixed;
+    background: #fff;
     ${tw`
         w-full
         min-w-full

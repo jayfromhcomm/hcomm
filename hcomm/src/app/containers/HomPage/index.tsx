@@ -7,6 +7,8 @@ import { FeatureSection } from "./featured";
 import { TopSection } from "./topSection";
 import '@brainhubeu/react-carousel'
 import { WhyHcomm } from "./whyHcomm";
+import { Cardi3D } from "../../../components/card/3D/cardi3D";
+import HomeCards from "../Cards/HomeCards";
 
 
 const PageContainer = styled.div`
@@ -25,9 +27,11 @@ export function HomePage() {
         <PageContainer>
             <Navbar />
             <TopSection />
-            <Marginer direction='vertical' margin='4em' />
+            <Marginer direction='vertical' margin='10em' />
             {/* <FeatureSection /> */}
-            <WhyHcomm />
+            {/* <WhyHcomm />
+            <Marginer direction='vertical' margin='10em' /> */}
+            <HomeCards />
         </PageContainer>
     )
 }

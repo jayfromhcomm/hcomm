@@ -35,7 +35,7 @@ const FeatureThumbnail = styled.div`
     }
 `
 
-const Name = styled.h3`
+const Name = styled.h1`
     ${tw`
         text-base
         font-bold
@@ -78,15 +78,16 @@ const Seperator = styled.div`
 
 const FeatureButton = styled(Button)`
     ${tw`
-        bg-white
+        bg-purple-500
         border-solid
         border-2
         min-w-full
         mt-5
-        text-purple-500
+        
+        text-white
         rounded-md
-        hover:bg-purple-500
-        hover:text-white
+        hover:bg-white
+        hover:text-purple-500
         hover:border-solid
     `}
 `
@@ -95,7 +96,7 @@ const StepIcon = styled.span`
     ${tw`
         text-gray-500
         text-5xl
-        mt-5
+        mt-12
         mb-5
     `}
 `
@@ -144,7 +145,7 @@ export function WhyHcomm() {
 
     return(
         <FeaturedSectionContainer>
-            <Title>Why HComm ?</Title>
+            <Title>Why HComm?</Title>
             <FeatureCardContainer>
                 {/* card one */}
                 <FeatureContainer>
@@ -159,7 +160,7 @@ export function WhyHcomm() {
                         </SmallText>
                     </TextContainer>
                     <Seperator />
-                    <FeatureButton text='Learn More' />
+                    <FeatureButton theme=''  text='Learn More' />
                 </FeatureContainer>
                 {/* card two */}
                 <FeatureContainer>
